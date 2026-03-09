@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="A comprehensive accessibility guide for ChromeOS designed for SEND students and staff. Learn how to use screen readers, magnifiers, and focus tools.">
+  <meta property="og:title" content="ChromeOS Accessibility Guide">
+  <meta property="og:description"
+    content="Easy-to-follow guides for Chromebook accessibility features including vision, hearing, motor, and learning tools.">
   <title>ChromeOS Accessibility Guide</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="/_sdk/element_sdk.js"></script>
@@ -25,11 +30,106 @@
     @view-transition {
       navigation: auto;
     }
+
+    /* Print Styles */
+    @media print {
+
+      header,
+      #home-btn,
+      .nav-category,
+      #back-btn,
+      footer {
+        display: none !important;
+      }
+
+      body,
+      #app {
+        height: auto !important;
+        overflow: visible !important;
+        background: white !important;
+      }
+
+      * {
+        color: black !important;
+        text-shadow: none !important;
+      }
+
+      .feature-card {
+        page-break-inside: avoid;
+        border: 1px solid #ccc !important;
+        background: transparent !important;
+      }
+
+      #feature-content {
+        border: none !important;
+        background: transparent !important;
+        padding: 0 !important;
+      }
+    }
+
+    /* Focus & Accessibility Styles */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #EA553F;
+      color: white;
+      padding: 8px;
+      z-index: 100;
+      transition: top 0.2s;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* Animation Styles */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .feature-card {
+      animation: fadeInUp 0.5s ease backwards;
+    }
+
+    .feature-card:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .feature-card:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .feature-card:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .feature-card:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    .feature-card:nth-child(5) {
+      animation-delay: 0.5s;
+    }
+
+    .feature-card:nth-child(6) {
+      animation-delay: 0.6s;
+    }
   </style>
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
 </head>
 
 <body class="h-full">
+  <a href="#main-content" class="skip-link font-bold rounded-br-lg" style="font-family: 'Lexend', sans-serif;">Skip to
+    main content</a>
   <div id="app" class="h-full overflow-auto" style="background: linear-gradient(135deg, #232650 0%, #1a1c3d 100%);">
     <!-- Header -->
     <header class="sticky top-0 z-50 backdrop-blur-md border-b"
@@ -84,7 +184,22 @@
             style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #d1d5db; line-height: 1.7;">Find easy guides
             to help you use accessibility features on your Chromebook. Click on any feature below to learn how to turn
             it on and use it.</p>
-        </div><!-- Quick Access Settings Reminder -->
+        </div>
+
+        <!-- Search Bar -->
+        <div class="max-w-2xl mx-auto mb-10">
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <span class="text-xl">🔍</span>
+            </div>
+            <input type="text" id="feature-search"
+              class="block w-full pl-10 pr-3 py-3 border border-transparent rounded-xl leading-5 bg-white/10 text-gray-100 placeholder-gray-400 focus:outline-none focus:bg-white/20 focus:ring-2 focus:ring-[#EA553F] transition-colors sm:text-sm"
+              style="font-family: 'Lexend', sans-serif;"
+              placeholder="Search for a feature (e.g. 'dictation' or 'mouse')">
+          </div>
+        </div>
+
+        <!-- Quick Access Settings Reminder -->
         <div class="mb-10 p-6 rounded-2xl border"
           style="background: rgba(234, 85, 63, 0.1); border-color: rgba(144, 147, 150, 0.3);">
           <div class="flex items-start gap-4">
@@ -98,9 +213,7 @@
                 features, you'll need to open your Chromebook settings:</p>
               <ol class="list-decimal list-inside space-y-1"
                 style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #d1d5db;">
-                <comment-tag id="3">
-                  <li>Click the <strong>time</strong> in the bottom-right corner of your screen</li>
-                </comment-tag id="3">
+                <li>Click the <strong>time</strong> in the bottom-right corner of your screen</li>
                 <li>Click the <strong>gear icon ⚙️</strong> to open Settings</li>
                 <li>Click <strong>"Accessibility"</strong> in the left menu</li>
               </ol>
@@ -114,10 +227,8 @@
                 style="background: linear-gradient(135deg, #3B6AB2 0%, #232650 100%);">
                 👁️
               </div>
-              <comment-tag id="4">
-                <h3 id="vision-title" class="text-2xl font-bold"
-                  style="font-family: 'Lexend', sans-serif; color: #f0f0f0;">Vision Features</h3>
-              </comment-tag id="4">
+              <h3 id="vision-title" class="text-2xl font-bold"
+                style="font-family: 'Lexend', sans-serif; color: #f0f0f0;">Vision Features</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="vision-cards">
               <!-- Cards inserted by JS -->
@@ -797,6 +908,48 @@
       header.style.borderColor = `${primaryColor}4D`; // 30% opacity
     }
 
+    // Filter features
+    function filterFeatures(searchTerm) {
+      const term = searchTerm.toLowerCase().trim();
+      const allCards = document.querySelectorAll('.feature-card');
+
+      allCards.forEach(card => {
+        if (!term) {
+          card.style.display = 'block';
+          return;
+        }
+
+        const featureId = card.dataset.featureId;
+        const category = card.dataset.category;
+        const feature = features[category].find(f => f.id === featureId);
+
+        if (feature) {
+          const matchTitle = feature.title.toLowerCase().includes(term);
+          const matchDesc = feature.shortDesc.toLowerCase().includes(term);
+          const matchKeywords = feature.steps.some(s => s.instruction.toLowerCase().includes(term)) ||
+            feature.howToUse.some(u => u.toLowerCase().includes(term));
+
+          if (matchTitle || matchDesc || matchKeywords) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        }
+      });
+
+      // Hide empty category sections
+      document.querySelectorAll('section[aria-labelledby]').forEach(section => {
+        const cards = section.querySelectorAll('.feature-card');
+        const visibleCards = Array.from(cards).filter(card => card.style.display !== 'none');
+
+        if (visibleCards.length === 0 && term) {
+          section.style.display = 'none';
+        } else {
+          section.style.display = 'block';
+        }
+      });
+    }
+
     // Event listeners
     function setupEventListeners() {
       // Home button
@@ -804,6 +957,14 @@
 
       // Back button
       document.getElementById('back-btn').addEventListener('click', showHome);
+
+      // Search input
+      const searchInput = document.getElementById('feature-search');
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          filterFeatures(e.target.value);
+        });
+      }
 
       // Category nav buttons
       document.querySelectorAll('.nav-category').forEach(btn => {
