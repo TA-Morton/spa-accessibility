@@ -130,21 +130,21 @@
 <body class="h-full">
   <a href="#main-content" class="skip-link font-bold rounded-br-lg" style="font-family: 'Lexend', sans-serif;">Skip to
     main content</a>
-  <div id="app" class="h-full overflow-auto" style="background: linear-gradient(135deg, #232650 0%, #1a1c3d 100%);">
+  <div id="app" class="h-full overflow-auto" style="background: #ffffff;">
     <!-- Header -->
     <header class="sticky top-0 z-50 backdrop-blur-md border-b"
-      style="background: rgba(35, 38, 80, 0.95); border-color: rgba(234, 85, 63, 0.3);">
+      style="background: rgba(255, 255, 255, 0.95); border-color: rgba(66, 133, 244, 0.2);">
       <div class="max-w-6xl mx-auto px-4 py-4">
         <div class="flex items-center justify-between">
           <button id="home-btn"
             class="flex items-center gap-4 hover:opacity-80 transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg p-1"
-            style="--tw-ring-color: #EA553F; --tw-ring-offset-color: #232650;" aria-label="Go to home page">
-            <!-- SAET Logo -->
-            <img src="saet-logo.png" alt="SAET Logo" class="w-16 h-16 md:w-20 md:h-20 object-contain" loading="lazy"
-              onerror="console.error('Logo failed to load:', this.src); this.style.background='#EA553F'; this.alt='Logo unavailable';">
+            style="--tw-ring-color: #4285F4; --tw-ring-offset-color: #ffffff;" aria-label="Go to home page">
+            <!-- GEG England Logo -->
+            <img src="GEG-England-Logo.png" alt="GEG-England-Logo" class="w-16 h-16 md:w-20 md:h-20 object-contain"
+              loading="lazy"
+              onerror="console.error('Logo failed to load:', this.src); this.style.background='#f8f9fa'; this.alt='Logo unavailable';">
             <div class="text-left">
-              <h1 id="site-title"
-                class="text-lg md:text-2xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-[#EA553F]"
+              <h1 id="site-title" class="text-lg md:text-2xl font-bold leading-tight text-gray-800"
                 style="font-family: 'Lexend', sans-serif;">ChromeOS Accessibility Guide</h1>
             </div>
           </button>
@@ -152,24 +152,24 @@
           <!-- Header Navigation Menu -->
           <nav class="flex items-center gap-1 md:gap-2">
             <button
-              class="nav-category flex items-center gap-1.5 text-xs md:text-sm font-medium px-2 py-1.5 rounded-lg hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-[#EA553F]"
-              style="font-family: 'Lexend', sans-serif; color: #d1d5db;" data-category="vision">
-              <span>👁️</span><span class="hidden sm:inline">Vision</span>
+              class="nav-category flex items-center gap-1.5 text-xs md:text-sm font-medium px-2 py-1.5 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-[#4285F4]"
+              style="font-family: 'Lexend', sans-serif; color: #5f6368;" data-category="vision">
+              <span class="text-xl" style="color: #4285F4">👁️</span><span class="hidden sm:inline">Vision</span>
             </button>
             <button
-              class="nav-category flex items-center gap-1.5 text-xs md:text-sm font-medium px-2 py-1.5 rounded-lg hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-[#EA553F]"
-              style="font-family: 'Lexend', sans-serif; color: #d1d5db;" data-category="hearing">
-              <span>👂</span><span class="hidden sm:inline">Hearing</span>
+              class="nav-category flex items-center gap-1.5 text-xs md:text-sm font-medium px-2 py-1.5 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-[#EA4335]"
+              style="font-family: 'Lexend', sans-serif; color: #5f6368;" data-category="hearing">
+              <span class="text-xl" style="color: #EA4335">👂</span><span class="hidden sm:inline">Hearing</span>
             </button>
             <button
-              class="nav-category flex items-center gap-1.5 text-xs md:text-sm font-medium px-2 py-1.5 rounded-lg hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-[#EA553F]"
-              style="font-family: 'Lexend', sans-serif; color: #d1d5db;" data-category="motor">
-              <span>🖐️</span><span class="hidden sm:inline">Motor</span>
+              class="nav-category flex items-center gap-1.5 text-xs md:text-sm font-medium px-2 py-1.5 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-[#34A853]"
+              style="font-family: 'Lexend', sans-serif; color: #5f6368;" data-category="motor">
+              <span class="text-xl" style="color: #34A853">🖐️</span><span class="hidden sm:inline">Motor</span>
             </button>
             <button
-              class="nav-category flex items-center gap-1.5 text-xs md:text-sm font-medium px-2 py-1.5 rounded-lg hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-[#EA553F]"
-              style="font-family: 'Lexend', sans-serif; color: #d1d5db;" data-category="learning">
-              <span>📚</span><span class="hidden sm:inline">Learning</span>
+              class="nav-category flex items-center gap-1.5 text-xs md:text-sm font-medium px-2 py-1.5 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-[#FBBC05]"
+              style="font-family: 'Lexend', sans-serif; color: #5f6368;" data-category="learning">
+              <span class="text-xl" style="color: #FBBC05">📚</span><span class="hidden sm:inline">Learning</span>
             </button>
           </nav>
         </div>
@@ -179,9 +179,9 @@
       <section id="home-view"><!-- Welcome Section -->
         <div class="text-center mb-12">
           <h2 id="welcome-heading" class="text-3xl md:text-4xl font-bold mb-4"
-            style="font-family: 'Lexend', sans-serif; color: #EA553F;">Welcome! 👋</h2>
+            style="font-family: 'Lexend', sans-serif; color: #4285F4;">Welcome! 👋</h2>
           <p id="welcome-message" class="text-lg md:text-xl max-w-2xl mx-auto"
-            style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #d1d5db; line-height: 1.7;">Find easy guides
+            style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #5f6368; line-height: 1.7;">Find easy guides
             to help you use accessibility features on your Chromebook. Click on any feature below to learn how to turn
             it on and use it.</p>
         </div>
@@ -193,26 +193,25 @@
               <span class="text-xl">🔍</span>
             </div>
             <input type="text" id="feature-search"
-              class="block w-full pl-10 pr-3 py-3 border border-transparent rounded-xl leading-5 bg-white/10 text-gray-100 placeholder-gray-400 focus:outline-none focus:bg-white/20 focus:ring-2 focus:ring-[#EA553F] transition-colors sm:text-sm"
+              class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-xl leading-5 bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#4285F4] focus:border-transparent transition-colors sm:text-sm shadow-sm"
               style="font-family: 'Lexend', sans-serif;"
               placeholder="Search for a feature (e.g. 'dictation' or 'mouse')">
           </div>
         </div>
 
         <!-- Quick Access Settings Reminder -->
-        <div class="mb-10 p-6 rounded-2xl border"
-          style="background: rgba(234, 85, 63, 0.1); border-color: rgba(144, 147, 150, 0.3);">
+        <div class="mb-10 p-6 rounded-2xl border" style="background: #e8f0fe; border-color: rgba(66, 133, 244, 0.2);">
           <div class="flex items-start gap-4">
             <div class="text-3xl">
               💡
             </div>
             <div>
-              <h3 class="text-lg font-bold mb-2" style="font-family: 'Lexend', sans-serif; color: #EA553F;">Quick Tip:
+              <h3 class="text-lg font-bold mb-2" style="font-family: 'Lexend', sans-serif; color: #1967d2;">Quick Tip:
                 How to Open Settings</h3>
-              <p class="mb-2" style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #d1d5db;">For most
+              <p class="mb-2" style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #3c4043;">For most
                 features, you'll need to open your Chromebook settings:</p>
               <ol class="list-decimal list-inside space-y-1"
-                style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #d1d5db;">
+                style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #3c4043;">
                 <li>Click the <strong>time</strong> in the bottom-right corner of your screen</li>
                 <li>Click the <strong>gear icon ⚙️</strong> to open Settings</li>
                 <li>Click <strong>"Accessibility"</strong> in the left menu</li>
@@ -224,11 +223,11 @@
           <section aria-labelledby="vision-title">
             <div class="flex items-center gap-3 mb-6">
               <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl"
-                style="background: linear-gradient(135deg, #3B6AB2 0%, #232650 100%);">
+                style="background: #e8f0fe; color: #4285F4;">
                 👁️
               </div>
               <h3 id="vision-title" class="text-2xl font-bold"
-                style="font-family: 'Lexend', sans-serif; color: #f0f0f0;">Vision Features</h3>
+                style="font-family: 'Lexend', sans-serif; color: #202124;">Vision Features</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="vision-cards">
               <!-- Cards inserted by JS -->
@@ -237,11 +236,11 @@
           <section aria-labelledby="hearing-title">
             <div class="flex items-center gap-3 mb-6">
               <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl"
-                style="background: linear-gradient(135deg, #96D3DF 0%, #3B6AB2 100%);">
+                style="background: #fce8e6; color: #EA4335;">
                 👂
               </div>
               <h3 id="hearing-title" class="text-2xl font-bold"
-                style="font-family: 'Lexend', sans-serif; color: #f0f0f0;">Hearing Features</h3>
+                style="font-family: 'Lexend', sans-serif; color: #202124;">Hearing Features</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="hearing-cards">
               <!-- Cards inserted by JS -->
@@ -250,11 +249,11 @@
           <section aria-labelledby="motor-title">
             <div class="flex items-center gap-3 mb-6">
               <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl"
-                style="background: linear-gradient(135deg, #22AC89 0%, #232650 100%);">
+                style="background: #e6f4ea; color: #34A853;">
                 🖐️
               </div>
               <h3 id="motor-title" class="text-2xl font-bold"
-                style="font-family: 'Lexend', sans-serif; color: #f0f0f0;">Motor &amp; Mobility Features</h3>
+                style="font-family: 'Lexend', sans-serif; color: #202124;">Motor &amp; Mobility Features</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="motor-cards">
               <!-- Cards inserted by JS -->
@@ -263,11 +262,11 @@
           <section aria-labelledby="learning-title">
             <div class="flex items-center gap-3 mb-6">
               <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl"
-                style="background: linear-gradient(135deg, #EA553F 0%, #232650 100%);">
+                style="background: #fef7e0; color: #FBBC05;">
                 📚
               </div>
               <h3 id="learning-title" class="text-2xl font-bold"
-                style="font-family: 'Lexend', sans-serif; color: #f0f0f0;">Learning &amp; Focus Features</h3>
+                style="font-family: 'Lexend', sans-serif; color: #202124;">Learning &amp; Focus Features</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="learning-cards">
               <!-- Cards inserted by JS -->
@@ -277,19 +276,19 @@
       </section><!-- Feature Detail View -->
       <section id="feature-view" class="hidden"><button id="back-btn"
           class="flex items-center gap-2 mb-6 px-4 py-2 rounded-xl font-medium transition-all hover:scale-105 focus:outline-none focus:ring-2"
-          style="font-family: 'Lexend', sans-serif; background: rgba(234, 85, 63, 0.2); color: #EA553F;">
+          style="font-family: 'Lexend', sans-serif; background: #e8f0fe; color: #4285F4; border: 1px solid rgba(66, 133, 244, 0.2);">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg> Back to all features </button>
         <article id="feature-content" class="rounded-2xl p-6 md:p-8"
-          style="background: rgba(255,255,255,0.05); border: 1px solid rgba(144, 147, 150, 0.1);">
+          style="background: #ffffff; border: 1px solid #dadce0; box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.1);">
           <!-- Feature content inserted by JS -->
         </article>
       </section>
     </main><!-- Footer -->
-    <footer class="border-t mt-12 py-8" style="border-color: rgba(144, 147, 150, 0.2);">
+    <footer class="border-t mt-12 py-8" style="border-color: #dadce0;">
       <div class="max-w-6xl mx-auto px-4 text-center">
-        <p style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #909396;">Essential for some • Useful for
+        <p style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #5f6368;">Essential for some • Useful for
           everyone • Accessibility backed in ChromeOS</p>
       </div>
     </footer>
@@ -703,15 +702,15 @@
       site_title: 'ChromeOS Accessibility Guide',
       welcome_heading: 'Welcome! 👋',
       welcome_message: 'Find easy guides to help you use accessibility features on your Chromebook. Click on any feature below to learn how to turn it on and use it.',
-      background_color: '#232650',
-      surface_color: '#1a1c3d',
-      text_color: '#f0f0f0',
-      primary_action_color: '#EA553F',
-      secondary_action_color: '#3B6AB2',
-      accent_color_1: '#96D3DF',
-      accent_color_2: '#22AC89',
-      neutral_color: '#909396',
-      dark_neutral: '#575253'
+      background_color: '#ffffff',
+      surface_color: '#ffffff',
+      text_color: '#202124',
+      primary_action_color: '#4285F4',
+      secondary_action_color: '#EA4335',
+      accent_color_1: '#FBBC05',
+      accent_color_2: '#34A853',
+      neutral_color: '#5f6368',
+      dark_neutral: '#202124'
     };
 
     let config = { ...defaultConfig };
@@ -720,25 +719,25 @@
     // Create feature card HTML
     function createFeatureCard(feature, category) {
       const categoryColors = {
-        vision: { bg: 'rgba(59, 106, 178, 0.15)', border: 'rgba(59, 106, 178, 0.3)', accent: '#3B6AB2' },
-        hearing: { bg: 'rgba(150, 211, 223, 0.15)', border: 'rgba(150, 211, 223, 0.3)', accent: '#96D3DF' },
-        motor: { bg: 'rgba(34, 172, 137, 0.15)', border: 'rgba(34, 172, 137, 0.3)', accent: '#22AC89' },
-        learning: { bg: 'rgba(234, 85, 63, 0.15)', border: 'rgba(234, 85, 63, 0.3)', accent: '#EA553F' }
+        vision: { bg: '#ffffff', border: '#dadce0', accent: '#4285F4' },
+        hearing: { bg: '#ffffff', border: '#dadce0', accent: '#EA4335' },
+        motor: { bg: '#ffffff', border: '#dadce0', accent: '#34A853' },
+        learning: { bg: '#ffffff', border: '#dadce0', accent: '#FBBC05' }
       };
       const colors = categoryColors[category];
 
       const difficultyColors = {
-        'Very Easy': { bg: '#22AC89', text: '#fff' },
-        'Easy': { bg: '#3B6AB2', text: '#fff' },
-        'Medium': { bg: '#EA553F', text: '#fff' },
-        'Advanced': { bg: '#575253', text: '#fff' }
+        'Very Easy': { bg: '#34A853', text: '#fff' },
+        'Easy': { bg: '#4285F4', text: '#fff' },
+        'Medium': { bg: '#FBBC05', text: '#202124' },
+        'Advanced': { bg: '#EA4335', text: '#fff' }
       };
       const diffColor = difficultyColors[feature.difficulty];
 
       return `
         <button
-          class="feature-card text-left p-5 rounded-xl border transition-all hover:scale-102 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2"
-          style="background: ${colors.bg}; border-color: ${colors.border}; --tw-ring-color: ${colors.accent}; --tw-ring-offset-color: #232650;"
+          class="feature-card text-left p-5 rounded-xl border transition-all hover:scale-102 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 bg-white"
+          style="border-color: ${colors.border}; --tw-ring-color: ${colors.accent}; --tw-ring-offset-color: #f8f9fa; box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.1);"
           data-feature-id="${feature.id}"
           data-category="${category}"
           aria-label="Learn about ${feature.title}"
@@ -747,8 +746,8 @@
             <span class="text-3xl">${feature.emoji}</span>
             <span class="px-2 py-1 rounded-full text-xs font-bold" style="background: ${diffColor.bg}; color: ${diffColor.text}; font-family: 'Lexend', sans-serif;">${feature.difficulty}</span>
           </div>
-          <h4 class="text-lg font-bold mb-2" style="font-family: 'Lexend', sans-serif; color: #f0f0f0;">${feature.title}</h4>
-          <p class="text-sm" style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #d1d5db; line-height: 1.6;">${feature.shortDesc}</p>
+          <h4 class="text-lg font-bold mb-2" style="font-family: 'Lexend', sans-serif; color: #202124;">${feature.title}</h4>
+          <p class="text-sm" style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #5f6368; line-height: 1.6;">${feature.shortDesc}</p>
         </button>
       `;
     }
@@ -756,19 +755,20 @@
     // Create feature detail HTML
     function createFeatureDetail(feature, category) {
       const categoryColors = {
-        vision: '#3B6AB2',
-        hearing: '#96D3DF',
-        motor: '#22AC89',
-        learning: '#EA553F'
+        vision: '#4285F4',
+        hearing: '#EA4335',
+        motor: '#34A853',
+        learning: '#FBBC05'
       };
       const accentColor = categoryColors[category];
+      const stepTextColor = category === 'learning' ? '#202124' : '#ffffff';
 
       const stepsHTML = feature.steps.map((step, i) => `
         <li class="flex gap-4">
-          <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-lg font-bold" style="background: ${accentColor}; color: #1a1c3d; font-family: 'Lexend', sans-serif;">${i + 1}</div>
+          <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-lg font-bold" style="background: ${accentColor}; color: ${stepTextColor}; font-family: 'Lexend', sans-serif;">${i + 1}</div>
           <div class="flex-grow pt-1">
-            <p class="text-lg" style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #f0f0f0; line-height: 1.7;">${step.instruction}</p>
-            ${step.tip ? `<p class="mt-2 text-sm italic" style="color: #909396;">💡 ${step.tip}</p>` : ''}
+            <p class="text-lg" style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #202124; line-height: 1.7;">${step.instruction}</p>
+            ${step.tip ? `<p class="mt-2 text-sm italic" style="color: #5f6368;">💡 ${step.tip}</p>` : ''}
           </div>
         </li>
       `).join('');
@@ -776,7 +776,7 @@
       const usageHTML = feature.howToUse.map(tip => `
         <li class="flex items-start gap-3">
           <span style="color: ${accentColor};">▸</span>
-          <span style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #d1d5db; line-height: 1.7;">${tip}</span>
+          <span style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #3c4043; line-height: 1.7;">${tip}</span>
         </li>
       `).join('');
 
@@ -785,8 +785,8 @@
           <div class="flex items-center gap-4 mb-4">
             <span class="text-5xl">${feature.emoji}</span>
             <div>
-              <h2 class="text-2xl md:text-3xl font-bold" style="font-family: 'Lexend', sans-serif; color: #f0f0f0;">${feature.title}</h2>
-              <p class="text-lg" style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #909396;">${feature.shortDesc}</p>
+              <h2 class="text-2xl md:text-3xl font-bold" style="font-family: 'Lexend', sans-serif; color: #202124;">${feature.title}</h2>
+              <p class="text-lg" style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #5f6368;">${feature.shortDesc}</p>
             </div>
           </div>
         </div>
@@ -800,7 +800,7 @@
           </ol>
         </div>
 
-        <div class="mb-8 p-5 rounded-xl" style="background: rgba(255,255,255,0.05);">
+        <div class="mb-8 p-5 rounded-xl border" style="background: #f8f9fa; border-color: #dadce0;">
           <h3 class="text-xl font-bold mb-4 flex items-center gap-2" style="font-family: 'Lexend', sans-serif; color: ${accentColor};">
             <span>✨</span> How to Use It
           </h3>
@@ -809,11 +809,11 @@
           </ul>
         </div>
 
-        <div class="p-5 rounded-xl border" style="background: rgba(34, 172, 137, 0.1); border-color: rgba(34, 172, 137, 0.3);">
-          <h3 class="text-lg font-bold mb-2 flex items-center gap-2" style="font-family: 'Lexend', sans-serif; color: #22AC89;">
+        <div class="p-5 rounded-xl border" style="background: #fff8e1; border-color: #fbbc0580;">
+          <h3 class="text-lg font-bold mb-2 flex items-center gap-2" style="font-family: 'Lexend', sans-serif; color: #ea8600;">
             <span>⭐</span> Top Tip
           </h3>
-          <p style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #d1d5db; line-height: 1.7;">${feature.topTip}</p>
+          <p style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #3c4043; line-height: 1.7;">${feature.topTip}</p>
         </div>
 
         <style>
@@ -824,10 +824,11 @@
             font-family: 'Lexend', sans-serif;
             font-size: 0.9em;
             font-weight: 600;
-            color: #1a1c3d;
-            background: #96D3DF;
+            color: #202124;
+            background: #f1f3f4;
             border-radius: 0.4em;
-            box-shadow: 0 2px 0 #3B6AB2;
+            border: 1px solid #dadce0;
+            box-shadow: 0 2px 0 #dadce0;
           }
         </style>
       `;
