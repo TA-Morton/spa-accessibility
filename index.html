@@ -184,6 +184,12 @@
               style="font-family: 'Lexend', sans-serif; color: #5f6368;" data-category="learning">
               <span class="text-xl" style="color: #FBBC05">📚</span><span class="hidden sm:inline">Learning</span>
             </button>
+            <div class="h-6 w-px bg-gray-300 mx-1 md:mx-2 hidden sm:block"></div>
+            <button id="nav-about-btn"
+              class="flex items-center gap-1.5 text-xs md:text-sm font-medium px-2 py-1.5 rounded-lg hover:bg-blue-50 transition-colors focus:outline-none focus:ring-2 focus:ring-[#4285F4]"
+              style="font-family: 'Lexend', sans-serif; color: #4285F4;">
+              <span class="text-xl">📖</span><span class="hidden sm:inline">About</span>
+            </button>
           </nav>
         </div>
       </div>
@@ -298,6 +304,90 @@
           <!-- Feature content inserted by JS -->
         </article>
       </section>
+
+      <!-- About View -->
+      <section id="about-view" class="hidden max-w-4xl mx-auto py-8">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4" style="font-family: 'Lexend', sans-serif; color: #202124;">
+            📖 About This App
+          </h2>
+          <p class="text-lg md:text-xl text-[#5f6368]" style="font-family: 'Atkinson Hyperlegible', sans-serif;">
+            Empowering accessibility across UK classrooms.
+          </p>
+        </div>
+
+        <!-- Community Card (Glassmorphism + Official styling) -->
+        <div class="rounded-2xl p-8 shadow-md relative overflow-hidden mb-12" style="
+            background: rgba(255, 255, 255, 0.7); 
+            backdrop-filter: blur(10px); 
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(66, 133, 244, 0.2); 
+            border-left: 6px solid #4285F4;
+          ">
+          <p class="text-lg mb-8"
+            style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #3c4043; line-height: 1.7;">
+            This tool was built and is maintained by <strong>GEG England</strong>—a community of passionate educators
+            dedicated to sharing the best of Google for Education across the UK.
+          </p>
+
+          <h3 class="text-2xl font-bold mb-6" style="font-family: 'Lexend', sans-serif; color: #202124;">
+            Why join a GEG?
+          </h3>
+          <p class="mb-6" style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #3c4043; line-height: 1.6;">
+            Being part of a Google Educator Group isn't just about tech; it's about connection. Whether you are a
+            classroom teacher, a lead, or an admin, joining your local GEG gives you:
+          </p>
+
+          <ul class="space-y-5 mb-10">
+            <li class="flex items-start gap-4">
+              <span class="text-2xl mt-0.5">🤝</span>
+              <div>
+                <strong class="block text-lg mb-1" style="font-family: 'Lexend', sans-serif; color: #202124;">Direct
+                  Support</strong>
+                <span
+                  style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #3c4043; line-height: 1.5;">Solutions
+                  from peers who "get" the UK curriculum.</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="text-2xl mt-0.5">🚀</span>
+              <div>
+                <strong class="block text-lg mb-1" style="font-family: 'Lexend', sans-serif; color: #202124;">Early
+                  Access</strong>
+                <span
+                  style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #3c4043; line-height: 1.5;">Insights
+                  into the latest Google Workspace and ChromeOS updates.</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="text-2xl mt-0.5">💡</span>
+              <div>
+                <strong class="block text-lg mb-1"
+                  style="font-family: 'Lexend', sans-serif; color: #202124;">Inspiration</strong>
+                <span
+                  style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #3c4043; line-height: 1.5;">Real-world
+                  examples of how to reduce workload and boost student outcomes.</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="text-center md:text-left mt-8 pt-8 border-t border-gray-200">
+            <h4 class="text-lg font-bold mb-4" style="font-family: 'Lexend', sans-serif; color: #202124;">Ready to grow
+              your network?</h4>
+            <a href="https://gegengland.org" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-bold text-white transition-all transform hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-300"
+              style="background-color: #4285F4; font-family: 'Lexend', sans-serif;"
+              aria-label="About and Community Section: Join GEG England">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+              </svg>
+              Find your local group and join GEG England
+            </a>
+          </div>
+        </div>
+      </section>
+
     </main><!-- Footer -->
     <footer class="border-t mt-12 pt-12 pb-8" style="border-color: #dadce0; background: #f8f9fa;">
       <div class="max-w-6xl mx-auto px-4">
@@ -896,6 +986,7 @@
 
       document.getElementById('feature-content').innerHTML = createFeatureDetail(feature, category);
       document.getElementById('home-view').classList.add('hidden');
+      document.getElementById('about-view').classList.add('hidden');
       document.getElementById('feature-view').classList.remove('hidden');
       currentView = 'feature';
 
@@ -909,8 +1000,18 @@
     // Show home
     function showHome() {
       document.getElementById('feature-view').classList.add('hidden');
+      document.getElementById('about-view').classList.add('hidden');
       document.getElementById('home-view').classList.remove('hidden');
       currentView = 'home';
+      document.getElementById('app').scrollTo(0, 0);
+    }
+
+    // Show about view
+    function showAbout() {
+      document.getElementById('home-view').classList.add('hidden');
+      document.getElementById('feature-view').classList.add('hidden');
+      document.getElementById('about-view').classList.remove('hidden');
+      currentView = 'about';
       document.getElementById('app').scrollTo(0, 0);
     }
 
@@ -998,11 +1099,17 @@
 
     // Event listeners
     function setupEventListeners() {
-      // Home button
+      // Home button (logo)
       document.getElementById('home-btn').addEventListener('click', showHome);
 
       // Back button
       document.getElementById('back-btn').addEventListener('click', showHome);
+
+      // About nav button
+      const aboutBtn = document.getElementById('nav-about-btn');
+      if (aboutBtn) {
+        aboutBtn.addEventListener('click', showAbout);
+      }
 
       // Search input
       const searchInput = document.getElementById('feature-search');
