@@ -131,6 +131,19 @@
   <a href="#main-content" class="skip-link font-bold rounded-br-lg" style="font-family: 'Lexend', sans-serif;">Skip to
     main content</a>
   <div id="app" class="h-full overflow-auto" style="background: #ffffff;">
+    <!-- Compatibility Banner -->
+    <div class="bg-[#fff8e1] border-b border-[#fbbc05]/30 py-2.5 px-4 text-center">
+      <p class="text-sm font-medium flex items-center justify-center gap-1.5 flex-wrap"
+        style="font-family: 'Lexend', sans-serif; color: #b06000;">
+        <span class="text-base">⚠️</span>
+        <span class="font-bold">Important:</span>
+        To test these settings, you must be using a
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg"
+          alt="Chrome Logo" class="w-4 h-4 inline-block mx-0.5" /> Chromebook or
+        <span class="text-base inline-block mx-0.5">♻️</span> ChromeOS Flex device.
+        <span class="text-xs opacity-80">(Not Windows or macOS)</span>
+      </p>
+    </div>
     <!-- Header -->
     <header class="sticky top-0 z-50 backdrop-blur-md border-b"
       style="background: rgba(255, 255, 255, 0.95); border-color: rgba(66, 133, 244, 0.2);">
@@ -286,10 +299,42 @@
         </article>
       </section>
     </main><!-- Footer -->
-    <footer class="border-t mt-12 py-8" style="border-color: #dadce0;">
-      <div class="max-w-6xl mx-auto px-4 text-center">
-        <p style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #5f6368;">Essential for some • Useful for
-          everyone • Accessibility baked in ChromeOS</p>
+    <footer class="border-t mt-12 pt-12 pb-8" style="border-color: #dadce0; background: #f8f9fa;">
+      <div class="max-w-6xl mx-auto px-4">
+
+        <!-- ChromeOS Flex Promo -->
+        <div class="max-w-3xl mx-auto bg-white rounded-2xl p-6 md:p-8 mb-10 border shadow-sm"
+          style="border-color: rgba(52, 168, 83, 0.2);">
+          <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
+            <div class="text-5xl text-[#34A853]">
+              ♻️
+            </div>
+            <div class="text-center md:text-left">
+              <h3 class="text-xl font-bold mb-3" style="font-family: 'Lexend', sans-serif; color: #137333;">Give Old
+                Tech New Life</h3>
+              <p style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #3c4043; line-height: 1.6;">
+                Have an old PC or Mac slowing you down? Don't bin it—Flex it. <strong>ChromeOS Flex</strong> is a free,
+                sustainable way to turn your aging hardware into a fast, secure, and fully accessible ChromeOS device.
+                It's the perfect way to refresh your school's tech for free.
+              </p>
+              <a href="https://chromeenterprise.google/os/chromeosflex/" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 mt-4 text-sm font-bold hover:underline border-b-2 border-transparent hover:border-[#1e8e3e] transition-all pb-0.5"
+                style="font-family: 'Lexend', sans-serif; color: #1e8e3e;">
+                Learn more about ChromeOS Flex
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright / Tagline -->
+        <div class="text-center">
+          <p style="font-family: 'Atkinson Hyperlegible', sans-serif; color: #5f6368;">Essential for some • Useful for
+            everyone • Accessibility baked in ChromeOS</p>
+        </div>
       </div>
     </footer>
   </div>
